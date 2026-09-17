@@ -14,11 +14,13 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header" aria-label="Primary navigation">
       <a class="monogram" href="#top" aria-label="Muhammad Asad Iqbal, home">MAI</a>
       <nav>
         <a href="#work">Work</a>
+        <a href="#process">Process</a>
         <a href="#about">About</a>
         <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
       </nav>
@@ -26,18 +28,31 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-kicker reveal">
+        <div class="hero-kicker reveal" data-parallax-speed="-0.035">
           <span class="status-dot" aria-hidden="true"></span>
           <span>UI/UX designer</span>
         </div>
 
-        <h1 id="hero-title" class="reveal">
+        <figure class="hero-portrait" data-parallax-speed="0.115">
+          <div class="portrait-orbit portrait-orbit--outer" aria-hidden="true"></div>
+          <div class="portrait-shell">
+            <img
+              src="hero-profile-v3.png"
+              alt="Muhammad Asad Iqbal"
+              width="720"
+              height="1280"
+            />
+          </div>
+          <div class="portrait-orbit portrait-orbit--inner" aria-hidden="true"></div>
+        </figure>
+
+        <h1 id="hero-title" class="reveal" data-parallax-speed="0.045">
           I design digital<br />
           experiences that feel
           <span class="highlight">obvious.</span>
         </h1>
 
-        <div class="hero-footer reveal">
+        <div class="hero-footer reveal" data-parallax-speed="-0.025">
           <p>
             I'm Muhammad Asad Iqbal—a UI/UX designer focused on turning complex
             ideas into clear, useful and memorable products.
@@ -52,13 +67,13 @@
       </section>
 
       <section class="work-section" id="work" aria-labelledby="work-title">
-        <div class="section-heading reveal">
+        <div class="section-heading reveal" data-parallax-speed="0.035">
           <p class="eyebrow">Selected work</p>
           <h2 id="work-title">Case studies are<br />on the way.</h2>
         </div>
 
         <div class="project-grid">
-          <article class="project-card project-card--primary reveal">
+          <article class="project-card project-card--primary reveal" data-parallax-speed="0.025">
             <div class="project-meta">
               <span>01 / Product design</span>
               <span>Coming soon</span>
@@ -85,7 +100,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--secondary reveal">
+          <article class="project-card project-card--secondary reveal" data-parallax-speed="-0.035">
             <div class="project-meta">
               <span>02 / Mobile experience</span>
               <span>Coming soon</span>
@@ -111,12 +126,185 @@
         </div>
       </section>
 
+      <section class="kinetic-section" aria-label="Design disciplines">
+        <div class="kinetic-row" data-kinetic-speed="-0.16" aria-hidden="true">
+          <div class="kinetic-track">
+            <span>Research</span><i>×</i><span>Strategy</span><i>×</i><span>Interface</span><i>×</i><span>Prototype</span><i>×</i>
+            <span>Research</span><i>×</i><span>Strategy</span><i>×</i><span>Interface</span><i>×</i><span>Prototype</span><i>×</i>
+          </div>
+        </div>
+        <div class="kinetic-row kinetic-row--reverse" data-kinetic-speed="0.12" aria-hidden="true">
+          <div class="kinetic-track">
+            <span>Think clearly</span><i>—</i><span>Make simply</span><i>—</i><span>Test honestly</span><i>—</i>
+            <span>Think clearly</span><i>—</i><span>Make simply</span><i>—</i><span>Test honestly</span><i>—</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <header class="process-intro reveal" data-parallax-speed="0.025">
+          <p class="eyebrow">Design process</p>
+          <h2 id="process-title">From signal<br />to system.</h2>
+          <p class="process-lede">
+            Good products emerge when insight, structure and craft move together.
+            I use a focused process that keeps every decision tied to the people
+            using the product.
+          </p>
+          <div class="process-ring" aria-hidden="true"><span>03</span></div>
+        </header>
+
+        <div class="process-stack">
+          <article class="process-card process-card--discover" data-scroll-card style="--card-index: 0">
+            <div class="process-card-copy">
+              <span class="process-step">01 / Discover</span>
+              <h3>Find the signal.</h3>
+              <p>Turn scattered input into a clear problem worth solving.</p>
+            </div>
+            <div class="process-visual process-visual--signal" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <b></b>
+            </div>
+          </article>
+
+          <article class="process-card process-card--shape" data-scroll-card style="--card-index: 1">
+            <div class="process-card-copy">
+              <span class="process-step">02 / Shape</span>
+              <h3>Give it structure.</h3>
+              <p>Map the journey, remove friction and make the next step obvious.</p>
+            </div>
+            <div class="process-visual process-visual--flow" aria-hidden="true">
+              <span></span><i></i><span></span><i></i><span></span>
+            </div>
+          </article>
+
+          <article class="process-card process-card--refine" data-scroll-card style="--card-index: 2">
+            <div class="process-card-copy">
+              <span class="process-step">03 / Refine</span>
+              <h3>Make it feel right.</h3>
+              <p>Prototype, test and sharpen the details until the experience feels natural.</p>
+            </div>
+            <div class="process-visual process-visual--polish" aria-hidden="true">
+              <div><span></span><span></span><span></span></div>
+              <b></b><b></b><b></b>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="expertise-section" aria-labelledby="expertise-title">
+        <div class="expertise-heading reveal" data-parallax-speed="0.025">
+          <p class="eyebrow">Where I add value</p>
+          <h2 id="expertise-title">Thinking across the<br /><em>whole product.</em></h2>
+          <p>
+            From the first question to the final interaction, each layer should
+            support one clear experience.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card expertise-card--wide reveal" data-spotlight-card>
+            <div class="expertise-topline"><span>01</span><span>Discover</span></div>
+            <h3>Product discovery</h3>
+            <p>Framing the problem, understanding context and finding the strongest opportunity.</p>
+            <div class="discovery-map" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>
+          </article>
+
+          <article class="expertise-card expertise-card--tall reveal" data-spotlight-card>
+            <div class="expertise-topline"><span>02</span><span>Structure</span></div>
+            <h3>UX architecture</h3>
+            <p>Flows and information structures that make complex products easier to navigate.</p>
+            <div class="architecture-stack" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          </article>
+
+          <article class="expertise-card expertise-card--blue reveal" data-spotlight-card>
+            <div class="expertise-topline"><span>03</span><span>Craft</span></div>
+            <h3>Interface systems</h3>
+            <p>Consistent visual languages that stay useful as products grow.</p>
+            <div class="system-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+
+          <article class="expertise-card expertise-card--acid reveal" data-spotlight-card>
+            <div class="expertise-topline"><span>04</span><span>Learn</span></div>
+            <h3>Prototype & validate</h3>
+            <p>Interactive ideas that make feedback concrete before expensive decisions are made.</p>
+            <div class="prototype-loop" aria-hidden="true"><span>Make</span><i>→</i><span>Test</span><i>→</i><span>Learn</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="principles-section" aria-labelledby="principles-title">
+        <header class="principles-heading reveal">
+          <p class="eyebrow">Design principles</p>
+          <h2 id="principles-title">The standard behind<br />the screens.</h2>
+        </header>
+
+        <div class="principles-list">
+          <article class="principle-row" data-principle>
+            <span class="principle-number">01</span>
+            <h3>Useful before beautiful.</h3>
+            <p>Visual craft has more impact when the product already makes sense.</p>
+            <div class="principle-line" aria-hidden="true"></div>
+          </article>
+          <article class="principle-row" data-principle>
+            <span class="principle-number">02</span>
+            <h3>Simple, not shallow.</h3>
+            <p>Reduce effort without hiding the depth people need to do real work.</p>
+            <div class="principle-line" aria-hidden="true"></div>
+          </article>
+          <article class="principle-row" data-principle>
+            <span class="principle-number">03</span>
+            <h3>Systems over screens.</h3>
+            <p>Design patterns that stay coherent through new features, states and teams.</p>
+            <div class="principle-line" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lab-section" aria-labelledby="lab-title">
+        <div class="lab-heading reveal" data-parallax-speed="0.025">
+          <p class="eyebrow">Interaction lab</p>
+          <h2 id="lab-title">Details that make<br />a product feel alive.</h2>
+          <p>Small experiments in feedback, rhythm and responsive motion.</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card lab-card--orbit reveal">
+            <div class="lab-meta"><span>Motion</span><span>01</span></div>
+            <div class="lab-demo orbit-demo" aria-hidden="true">
+              <div class="orbit-core">MAI</div>
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Movement with purpose</h3>
+            <p>Motion should explain change, direct attention and reward action.</p>
+          </article>
+
+          <article class="lab-card lab-card--states reveal">
+            <div class="lab-meta"><span>Feedback</span><span>02</span></div>
+            <div class="lab-demo state-demo" aria-hidden="true">
+              <button tabindex="-1"><span>Send prototype</span><i>✓</i></button>
+              <div class="state-cursor"></div>
+            </div>
+            <h3>Clear interface states</h3>
+            <p>Every tap deserves an immediate, understandable response.</p>
+          </article>
+
+          <article class="lab-card lab-card--tokens reveal">
+            <div class="lab-meta"><span>Systems</span><span>03</span></div>
+            <div class="lab-demo token-demo" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <h3>Rhythm at every scale</h3>
+            <p>Shared rules create consistency without making every screen identical.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="about-section" id="about" aria-labelledby="about-title">
-        <div class="about-number" aria-hidden="true">02</div>
+        <div class="about-number" aria-hidden="true">07</div>
         <p class="eyebrow reveal">How I work</p>
         <div class="about-grid">
-          <h2 id="about-title" class="reveal">Clarity first.<br />Always.</h2>
-          <div class="about-copy reveal">
+          <h2 id="about-title" class="reveal" data-parallax-speed="0.035">Clarity first.<br />Always.</h2>
+          <div class="about-copy reveal" data-parallax-speed="-0.025">
             <p>
               I care about the thinking behind the pixels: understanding people,
               framing the right problem and shaping interfaces that make the next
@@ -135,9 +323,9 @@
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-orbit" aria-hidden="true"><span>MAI</span></div>
+        <div class="contact-orbit" data-parallax-speed="0.08" aria-hidden="true"><span>MAI</span></div>
         <p class="eyebrow reveal">Have a product in mind?</p>
-        <h2 id="contact-title" class="reveal">Let's make it<br /><em>make sense.</em></h2>
+        <h2 id="contact-title" class="reveal" data-parallax-speed="0.035">Let's make it<br /><em>make sense.</em></h2>
         <p class="contact-note reveal">
           Contact details will be added here soon.
         </p>
